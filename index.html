@@ -1,0 +1,78 @@
+<!DOCTYPE html >
+<html>
+   <head>
+      <title>Ecommerce Shopping Cart</title>
+      <style>
+         /* CSS styles */
+         header {
+         background-color: #333;
+         color: white;
+         text-align: center;
+         padding: 20px;
+         }
+         footer {
+         background-color: #777;
+         color: white;
+         text-align: center;
+         padding: 10px;
+         }
+         img {
+         width: 200px;
+         }
+         .search-container {
+         width: 50%;
+         margin: 20px auto;
+         }
+         .product-container {
+         display: flex;
+         flex-wrap: wrap;
+         justify-content: center;
+         }
+         .product {
+         margin: 20px;
+         text-align: center;
+         }
+      </style>
+   </head>
+   <body>
+      <header>
+         <h1>My Shopping Cart</h1>
+      </header>
+      <div class="search-container">
+         <input type="text" id="search" placeholder="Search..">
+         <script>
+            // JS code to search products
+            const search = document.getElementById('search');
+            search.addEventListener('keyup', () => {
+               // search logic
+            });
+         </script>
+      </div>
+      <h2>Products</h2>
+      <div class="product-container">
+         <div class="product">
+            <img src="shirt.jpg">
+            <p>T-Shirt</p>
+            <button>Add to Cart</button>
+         </div>
+         <div class="product">
+            <img src="shoes.jpg">
+            <p>Sneakers</p>
+            <button>Add to Cart</button>
+         </div>
+         <div class="product">
+            <img src="dress.jpg">
+            <p>Dress</p>
+            <button>Add to Cart</button>
+         </div>
+         <div class="product">
+            <img src="hat.jpg">
+            <p>Hat</p>
+            <button>Add to Cart</button>
+         </div>
+      </div>
+      <footer>
+         &copy; 2023 My Shopping Cart
+      </footer>
+   </body>
+</html>
